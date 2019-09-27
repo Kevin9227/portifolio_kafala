@@ -43,6 +43,9 @@ footer{
     width: 150px;
     height: 150px;
 }
+#foto:hover{
+    
+}
 .titulo_nome{
     font-size: 23px;
     color: #ffffffce;
@@ -54,6 +57,7 @@ footer{
     font-family: 'fonte_nome', sans-serif;
     padding: 5px;
     text-align: center;
+    
 }
 #funcao{
     font-size: 20px;
@@ -184,7 +188,7 @@ footer{
         width: 3%;
     }
 }
-/* Pr DAR CORES AOS TITULOS*/
+/* Para DAR CORES AOS TITULOS*/
 #html{
     color: rgb(255, 166, 0);
 }
@@ -203,3 +207,29 @@ footer{
 #python{
     color: rgb(195, 255, 0);
 }
+/* KEYFRAMES PARA O NOME*/
+@keyframes anima_nome{
+    from{
+            left: 500px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+/* Colocando responsividade no site*/
+@media(max-width:0){
+    header .cabeca,
+    header nav, header nav a,
+    div .titulo_nome h1,
+    span section .conteudo,
+    div .container,
+    img #foto section .descricao,
+    div .meu_nivel h1,
+    li h3 #html #css #php #js #mysql #python span .bar{
+        float: left;
+        text-align:center;
+        width:100%;
+    }
+}
+
