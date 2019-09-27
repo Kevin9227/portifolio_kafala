@@ -6,39 +6,43 @@
     font-family: 'fonte_nome';
     src: url("../fontes/font04.otf");
 }
-body{
-    background: url("../img/ful02.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
-/*.cabeca{
-     estilo de colocar a imagem fixa no inicio
-    
-    width: auto;
-    height: 300px;
+.cabeca{
+     /*estilo de colocar a imagem fixa no inicio*/
+     background: url("../img/ful02.png");
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;    
+     width: auto;
+     height: 300px;
+     margin-top:-10px;
  
 }
-*/
+
 .conteudo{
    background: #1a1919;
    width: 10;
-   margin-top: 70px;
-   border-top: 25px solid rgba(14, 160, 160, 0.479);   
+   border-top: 25px solid rgba(14, 160, 160, 0.479);  
+   padding: 20px; 
 }
 .container{
     text-align: center;
     margin-top:40px;
 }
+footer{
+    background:#1a1919;; 
+    color: #ffffffce;
+    height: 50px;
+    margin-top:-20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
 #foto{
     border-radius:100%;
     width: 150px;
     height: 150px;
-
 }
-
 .titulo_nome{
     font-size: 23px;
     color: #ffffffce;
@@ -58,7 +62,7 @@ body{
 }
 .social{
     margin:10px;
-    font-size:45px;
+    font-size:40px;
 }
 .social, a{
     color: rgba(248, 245, 245, 0.212);
