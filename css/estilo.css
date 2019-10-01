@@ -1,235 +1,258 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face{
-    font-family: 'fonte_nome';
-    src: url("../fontes/font04.otf");
-}
-
-.cabeca{
-     /*estilo de colocar a imagem fixa no inicio*/
-     background: url("../img/ful02.png");
-     background-position: top center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;    
-     width: auto;
-     height: 300px;
-     margin-top:-10px;
- 
+@font-face {
+  font-family: 'fonte_nome';
+  src: url('../fontes/font04.otf');
 }
 
-.conteudo{
-   background: #1a1919;
-   width: 10;
-   border-top: 25px solid rgba(14, 160, 160, 0.479);  
-   padding: 20px; 
+.cabeca {
+  /*estilo de colocar a imagem fixa no inicio*/
+  background: url('../img/ful02.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  height: 300px;
+  margin-top: -10px;
 }
-.container{
-    text-align: center;
-    margin-top:40px;
-}
-footer{
-    background:#1a1919;; 
-    color: #ffffffce;
-    height: 50px;
-    margin-top:-20px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-#foto{
-    border-radius:100%;
-    width: 150px;
-    height: 150px;
-}
-#foto:hover{
-    
-}
-.titulo_nome{
-    font-size: 23px;
-    color: #ffffffce;
-}
-.nome{
-    border:  2px solid rgb(83, 81, 81);
-    width:  500px;
-    margin: auto;
-    font-family: 'fonte_nome', sans-serif;
-    padding: 5px;
-    text-align: center;
-    
-}
-#funcao{
-    font-size: 20px;
-    color: #069;
 
+.conteudo {
+  background: #1a1919;
+  width: 10;
+  border-top: 25px solid rgba(14, 160, 160, 0.479);
+  padding: 20px;
 }
-.social{
-    margin:10px;
-    font-size:40px;
+.container {
+  text-align: center;
+  margin-top: 40px;
 }
-.social, a{
-    color: rgba(248, 245, 245, 0.212);
-    padding: 20px;
+footer {
+  background: #1a1919;
+  color: #ffffffce;
+  height: 50px;
+  margin-top: -20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
-.social, a:hover{
-    color: #928f8f;
+#foto {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+#foto:hover {
+}
+.titulo_nome {
+  font-size: 23px;
+  color: #ffffffce;
+}
+.nome {
+  border: 2px solid rgb(83, 81, 81);
+  width: 500px;
+  margin: auto;
+  font-family: 'fonte_nome', sans-serif;
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nome {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#funcao {
+  font-size: 20px;
+  color: #069;
+}
+.social {
+  margin: 10px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .social {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  .social i {
+    color: white;
+  }
+}
+
+.social,
+a {
+  color: rgba(248, 245, 245, 0.212);
+  padding: 20px;
+}
+.social,
+a:hover {
+  color: #928f8f;
 }
 /* Estilizando o Meu aprendizato*/
-.descricao{
-    font-size: 15px;
-    list-style:none;
-    padding: 0;
+.descricao {
+  font-size: 15px;
+  list-style: none;
+  padding: 0;
 }
-.meu_nivel{
-    width: 500px;
-    margin: 60px auto;
-    color: white;
+.meu_nivel {
+  width: 500px;
+  margin: 60px auto;
+  color: white;
 }
-.meu_nivel h1{
-    text-align: center;
-}
-.meu_nivel li{
-    margin: 20px 0;
-}
-.bar{
-    background: #353b48;
-    display: block;
-    height: 2px;
-    border: 1px solid rgba(0 , 0, 0, 0.3);
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
-    
-}
-.bar span{
-    height: 2px;
-    float: left;
-    background: #2187e7;
-    border-radius: 10px;
 
+@media (max-width: 768px) {
+  .meu_nivel {
+    width: 100%;
+  }
 }
-.html{
-    width:18%;
-    position: absolute;
-    animation: html 2s;
+.meu_nivel h1 {
+  text-align: center;
 }
-.css{
-    width:15%;
-    position: absolute;
-    animation: css 2s;
+.meu_nivel li {
+  margin: 20px 0;
 }
-.js{
-    width:5%;
-    position: absolute;
-    animation: js 2s;
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
 }
-.php{
-    width:16%;
-    position: absolute;
-    animation: php 2s;
+.bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+  border-radius: 10px;
 }
-.python{
-    width:20%;
-    position: absolute;
-    animation: python 2s;
+.html {
+  width: 18%;
+  position: absolute;
+  animation: html 2s;
 }
-.mysql{
-    width:3%;
-    position: absolute;
-    animation: mysql 2s;
+.css {
+  width: 15%;
+  position: absolute;
+  animation: css 2s;
+}
+.js {
+  width: 5%;
+  position: absolute;
+  animation: js 2s;
+}
+.php {
+  width: 16%;
+  position: absolute;
+  animation: php 2s;
+}
+.python {
+  width: 20%;
+  position: absolute;
+  animation: python 2s;
+}
+.mysql {
+  width: 3%;
+  position: absolute;
+  animation: mysql 2s;
 }
 /* Keyframes dos nomes*/
-@keyframes html{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 18%;
-    }
+@keyframes html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 18%;
+  }
 }
-@keyframes css{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 15%;
-    }
+@keyframes css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 15%;
+  }
 }
-@keyframes js{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 5%;
-    }
+@keyframes js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
 }
-@keyframes php{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 16%;
-    }
+@keyframes php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 16%;
+  }
 }
-@keyframes python{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 20%;
-    }
+@keyframes python {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
 }
-@keyframes mysql{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 3%;
-    }
+@keyframes mysql {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 3%;
+  }
 }
 /* Para DAR CORES AOS TITULOS*/
-#html{
-    color: rgb(255, 166, 0);
+#html {
+  color: rgb(255, 166, 0);
 }
-#css{
-    color: rgb(4, 0, 255);
+#css {
+  color: rgb(4, 0, 255);
 }
-#php{
-    color: rgb(0, 247, 255);
+#php {
+  color: rgb(0, 247, 255);
 }
-#js{
-    color: rgb(255, 30, 0);
+#js {
+  color: rgb(255, 30, 0);
 }
-#mysql{
-    color: rgb(98, 0, 255);
+#mysql {
+  color: rgb(98, 0, 255);
 }
-#python{
-    color: rgb(195, 255, 0);
+#python {
+  color: rgb(195, 255, 0);
 }
 /* KEYFRAMES PARA O NOME*/
-@keyframes anima_nome{
-    from{
-            left: 500px;
-    }
-    to{
-        left: 0px;
-    }
+@keyframes anima_nome {
+  from {
+    left: 500px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 /* Colocando responsividade no site*/
-@media(max-width:0){
-    header .cabeca,
-    header nav, header nav a,
-    div .titulo_nome h1,
-    span section .conteudo,
-    div .container,
-    img #foto section .descricao,
-    div .meu_nivel h1,
-    li h3 #html #css #php #js #mysql #python span .bar{
-        float: left;
-        text-align:center;
-        width:100%;
-    }
+@media (max-width: 0) {
+  header .cabeca,
+  header nav,
+  header nav a,
+  div .titulo_nome h1,
+  span section .conteudo,
+  div .container,
+  img #foto section .descricao,
+  div .meu_nivel h1,
+  li h3 #html #css #php #js #mysql #python span .bar {
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
 }
-
