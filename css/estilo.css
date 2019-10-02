@@ -14,7 +14,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: co;
   width: auto;
   height: 300px;
   margin-top: -10px;
@@ -57,7 +57,6 @@ footer {
   padding: 5px;
   text-align: center;
 }
-
 @media (max-width: 768px) {
   .nome {
     width: 90%;
@@ -213,23 +212,23 @@ a:hover {
 }
 /* Para DAR CORES AOS TITULOS*/
 #html {
-  color: rgb(255, 166, 0);
+  color: rgb(245, 245, 245);
 }
 #css {
-  color: rgb(4, 0, 255);
+  color:  rgb(245, 245, 245);
 }
 #php {
-  color: rgb(0, 247, 255);
+  color:  rgb(245, 245, 245);
 }
 #js {
-  color: rgb(255, 30, 0);
+  color:  rgb(245, 245, 245);
 }
 #mysql {
-  color: rgb(98, 0, 255);
+  color:  rgb(245, 245, 245);
 }
 #python {
-  color: rgb(195, 255, 0);
-}
+  color:  rgb(245, 245, 245)}
+
 /* KEYFRAMES PARA O NOME*/
 @keyframes anima_nome {
   from {
