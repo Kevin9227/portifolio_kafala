@@ -14,7 +14,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: co;
+  background-size: cover;
   width: auto;
   height: 300px;
   margin-top: -10px;
@@ -42,6 +42,10 @@ footer {
   border-radius: 100%;
   width: 150px;
   height: 150px;
+}
+#foto:hover {
+  transform:	scale(1.2)	rotate(-0deg);
+	transition: 0.5s;
 }
 .titulo_nome {
   font-size: 23px;
